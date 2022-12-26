@@ -1,0 +1,38 @@
+<?xml version="1.0"?  encoding="UTF-8"?>
+<odoo>
+    <!--
+        Form view carservice
+    -->
+
+    <record id="carservice_form_view" model="ir.ui.view">
+        <field name="name">carservice.form.view</field>
+        <field name="model">carservice</field>
+        <field name="arch" type="xml">
+            <form string="Car Service">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="precio"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+            
+    <!--
+        Tree view carservice
+    -->
+
+    <record id="carservice_tree_view" model="ir.ui.view">
+        <field name="name">carservice.tree.view</field>
+        <field name="model">carservice</field>
+        <field name="arch" type="xml">
+            <tree string="Persons">
+                <field name="name"/>
+                <field name="precio"/>
+            </tree>
+        </field>
+    </record>
+
+
+</odoo>

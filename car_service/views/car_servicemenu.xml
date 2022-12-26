@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    	<!-- Generic menu for car service module
+    	-->
+
+    	<record id="car_service_action" model="ir.actions.act_window">
+    		<field name="name">Car Service</field>
+    		<field name="res_model">carservice</field>
+    		<field name="view_mode">tree,form</field>
+    	</record>
+
+
+
+    	<menuitem id="menu_car_service_module" name="Car Service"/>
+    	<menuitem id="menu_car_service" name="Servicios de carros" parent="menu_car_service_module" action="car_service_action"/>
+
+_car_service
+
+</odooC>
